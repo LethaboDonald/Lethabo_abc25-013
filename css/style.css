@@ -1,4 +1,11 @@
 /* General Reset */
+.profile-img {
+      float: left;
+      margin-right: 15px;
+      width: 250px;
+      height: auto;
+      border-radius: 8px; /* optional: rounded corners */
+    }
 body {
   margin: 0;
   font-family: Arial, sans-serif;
