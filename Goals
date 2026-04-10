@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goals - Lethabo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <section id="goals">
+    <h2>Academic Goals</h2>
+    <div class="card">
+      <p>My goal is to complete my studies abroad, <b>CANADA</b>.</p>
+    </div>
+  </section>
+</body>
+</html>
 
