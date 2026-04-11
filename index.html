@@ -5,16 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lethabo's Personal Website</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    /* ====== GENERAL STYLES ====== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+      color: #0d47a1;
+    }
+
+    header {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.1);
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: #0d47a1;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      border-left: 5px solid #0d47a1;
+      padding-left: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      line-height: 1.6;
+    }
+
+    .profile-img {
+      float: left;
+      width: 220px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      background: #0d47a1;
+      color: white;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      .profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Let's get to know Lethabo Donald Oagile</h1>
     <nav>
       <ul>
-       <li><a href="about">About Me</a></li>
-      <li><a href="Education">Education</a></li>
-      <li><a href="Goals">Goals</a></li>
-      <li><a href="Contact">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -24,21 +127,21 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="card">
-        <p> <img src="images/Lethabo.jpg" alt="Lethabo Donald Ogile" class="profile-img">Bonjour!, my name is <b>Lethabo Donald Ogile</b>. I am passionate about learning, personal growth, and building a strong academic foundation. This website is a reflection of my journey and the aspirations I hold for the future.<p>I'm a 19-year-old first-year computing student at Botswana Accountancy College, expected to graduate in 2029. I attended Flamingo International School from Grade 1 through High School.<p> After my 4 years in Botswana Accountancy College, I'm interested in going into postgraduate studies to further my studies and hope to graduate as a qualified System Analyst or a back-end Developer.</p></p>
-
-Outside of academics, I enjoy Volleyball, Chess, Hockey, coding and Swimming not forgetting photography to capture memories. And i beleive so much in connecting with jolly and bubbly people , individuals who are energetic .<p>If You're Looking For someone who doesn't just follow the stars but dares to rearrange them, then I believe you're on the right orbit.</p></p>
-        Bonjour!, my name is <b>Lethabo Donald Ogile</b>. I am passionate about learning, personal growth, and building a strong academic foundation. This website is a reflection of my journey and the aspirations I hold for the future.<p>I'm a 19-year-old first-year computing student at Botswana Accountancy College, expected to graduate in 2029. I attended Flamingo International School from Grade 1 through High School.<p> After my 4 years in Botswana Accountancy College, I'm interested in going into postgraduate studies to further my studies and hope to graduate as a qualified System Analyst or a back-end Developer.</p></p>
-
-Outside of academics, I enjoy Volleyball, Chess, Hockey, coding and Swimming not forgetting photography to capture memories. And i beleive so much in connecting with jolly and bubbly people , individuals who are energetic .<p>If You're Looking For someone who doesn't just follow the stars but dares to rearrange them, then I believe you're on the right orbit.</p></p>
-        
+        <img src="images/Lethabo.jpg" alt="Lethabo Donald Ogile" class="profile-img">
+        <p>Bonjour!, my name is <b>Lethabo Donald Ogile</b>. I am passionate about learning, personal growth, and building a strong academic foundation. This website is a reflection of my journey and the aspirations I hold for the future.</p>
+        <p>I'm a 19-year-old first-year computing student at Botswana Accountancy College, expected to graduate in 2029. I attended Flamingo International School from Grade 1 through High School.</p>
+        <p>After my 4 years in Botswana Accountancy College, I'm interested in going into postgraduate studies to further my studies and hope to graduate as a qualified System Analyst or a back-end Developer.</p>
+        <p>Outside of academics, I enjoy Volleyball, Chess, Hockey, coding and Swimming — not forgetting photography to capture memories. I believe in connecting with jolly and bubbly people, individuals who are energetic.</p>
+        <p>If you're looking for someone who doesn't just follow the stars but dares to rearrange them, then I believe you're on the right orbit.</p>
       </div>
     </section>
+
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
         <p>Email: lethaboagile@gmail.com</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/LethaboDonaldOagile" >Lethabo Donald Oagile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/LethaboDonaldOagile" target="_blank">Lethabo Donald Oagile</a></p>
       </div>
     </section>
   </main>
