@@ -3,17 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
+  <title>Education - Lethabo</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .edu-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 25px;
+      line-height: 1.6;
+    }
+    .edu-img {
+      float: right;
+      width: 280px;
+      margin: 0 0 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .edu-img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .edu-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <section id="Education">
     <h2>Education Background</h2>
-    <div class="card">
-      <p>I have pursued my studies at Flamingo International School, and right now im currently studying BSc(hons) Applied Business Computing at the Botswana School of Business Sciences, where i'm developing skills in mathematics, coding, and web development. My academic journey has been shaped by curiosity, dedication, and a drive to excel.</p>
+    <div class="edu-card">
+      <p>
+        <img src="images/flamingo_school.jpg" alt="Flamingo International School" class="edu-img">
+        I pursued my studies at <b>Flamingo International School</b>, where my curiosity and dedication shaped my academic journey. 
+        Currently, I’m studying <b>BSc (Hons) Applied Business Computing</b> at the Botswana School of Business Sciences, developing skills in mathematics, coding, and web development.
+      </p>
+
+      <p>
+        <img src="images/chess.jpg" alt="Chess Champion" class="edu-img" style="float:left; margin:0 20px 15px 0;">
+        Beyond academics, I was recognized as one of the <b>best chess players</b> in high school. Chess taught me strategy, patience, and critical thinking — qualities that continue to guide me in computing and problem-solving.
+      </p>
+
+      <p>
+        <img src="images/volleyball.jpg" alt="Volleyball Player" class="edu-img">
+        I also excelled in <b>volleyball</b>, where teamwork and energy became my strengths. Sports gave me balance, resilience, and the ability to connect with others in a spirited, collaborative way.
+      </p>
     </div>
   </section>
 </body>
 </html>
-
-
