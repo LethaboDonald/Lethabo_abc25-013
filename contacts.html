@@ -19,13 +19,36 @@
     </nav>
   </header>
   <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:lethaboagile@gmail.com">lethaboagile@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/LethaboDonaldOagile" target="_blank"><img src="images/LI-Logo.png" alt="LinkedIn" width="60" height="30"></a></p>
-      <p>TikTok:  <a href="tiktok.com/@lethaboagile" target="_blank">Lethabo Donald Oagile</a></p>
-    </div>
-  </section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:lethaboagile@gmail.com">lethaboagile@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/LethaboDonaldOagile" target="_blank"><img src="images/LI-Logo.png" alt="LinkedIn" width="60" height="30"></a></p>
+    <p>TikTok:  <a href="https://tiktok.com/@lethaboagile" target="_blank">Lethabo Donald Oagile</a></p>
+  </div>
+
+  <!-- Feed Button -->
+  <button onclick="document.getElementById('feedForm').style.display='block'">Feed</button>
+
+  <!-- Hidden Form -->
+  <div id="feedForm" style="display:none; margin-top:20px;">
+    <form action="submit_feed.php" method="post">
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname" required><br><br>
+
+      <label for="lname">Surname:</label><br>
+      <input type="text" id="lname" name="lname" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
    <footer>
     <p>&copy; 2026 Lethabo Donald Oagile | Personal Website</p>
   </footer>
